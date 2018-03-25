@@ -5,7 +5,7 @@ require_relative 'lib/database_connection_setup.rb'
 require_relative 'lib/instance.rb'
 require_relative 'lib/peep.rb'
 
-class Chitter < Sinatra::Base
+class Chat < Sinatra::Base
 
   configure do
      set :public_folder, File.expand_path('../public', __FILE__)

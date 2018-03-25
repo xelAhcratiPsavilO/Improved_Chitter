@@ -13,7 +13,20 @@
   font-family: 'UnifrakturCook', cursive;
 }
 
-.center {
+p {
+color: white;
+font-size: 30px;
+margin-top: 50px;
+margin-bottom: 50px;
+text-align: center;
+font-family: 'Cookie', cursive;
+}
+
+.x {
+  margin-top: 500px;
+}
+
+.centrado {
      position: absolute;
      margin: auto;
      top: 0;
@@ -24,13 +37,18 @@
      height: 100px;
 }
 
-.inline {
+.otrocentrado {
+width: 80px;
+margin: auto;
+}
+
+.saltalineas {
   display: inline-block;
   width: 250px;
   margin-bottom: 20px;
 }
 
-.bottom {
+.sangrado {
 margin-bottom: 20px;
 }
 

@@ -4,7 +4,7 @@ class Emailsender
 
   def self.send(email)
     Pony.options = {
-      :subject => "Someone mentioned you on Chitter!",
+      :subject => "Someone mentioned you on Chat with your Gang!",
       :body => "",
       :via => :smtp,
       :via_options => {

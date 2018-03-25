@@ -1,15 +1,15 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>Chitter</title>  
+    <link rel="stylesheet" type="text/css" href="/otherstyle.css">
+    <title>Signup Page</title>
   </head>
   <body background = 'https://webgradients.com/public/webgradients_png/035%20Itmeo%20Branding.png'>
-    <p> Hello to <%= "#{@email}" %>, you have been signed up to Chitter! </p>
-    <form class="center2">
+    <p> Hello <%= "#{@email}" %>, you just created an account in Chat with your Gang! </p>
+    <form class="otrocentrado">
       <button type="submit" formmethod="get" formaction="/chitter/index">Return to login</button>
     </form>
     <a href = 'https://twitter.com/Alex__Code'>
-    <img src='/twit.png' alt='T' width=30 heigh=30>
+    <img class='x' src='/twit.png' alt='T' width=30 heigh=30>
     </a>
     </br>
     <a href = 'https://www.youtube.com/channel/UCbb1jwj4txlERk4jBWWienw?view_as=subscriber'>
