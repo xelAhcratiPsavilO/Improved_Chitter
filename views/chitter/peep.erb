@@ -1,13 +1,15 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>Chitter</title>
+    <link rel="stylesheet" type="text/css" href="/otherstyle.css">
+    <title>Peep Page</title>
   </head>
   <body background = 'https://webgradients.com/public/webgradients_png/035%20Itmeo%20Branding.png'>
-    <p><%= "What would #{@email} like to say?" %> </p>
-    <form class="center3">
-      <input class= "inputpeep" type="text" name="peep">
-      <button type="submit" formmethod="post" formaction="/chitter/<%=@email%>/submit">Submit Peep</button>
+    <p><%= "Speak up! We want to know what #{@email} has to say!" %> </p>
+    <form class="otrocentrado">
+      <div class="sangrado">
+        <input type="text" name="peep">
+      </div>
+      <button type="submit" formmethod="post" formaction="/chitter/<%=@email%>/submit">Send Text</button>
     </form>
     <a href = 'https://twitter.com/Alex__Code'>
     <img class='x' class="links" src='/twit.png' alt='T' width=30 heigh=30>

@@ -40,6 +40,7 @@ font-family: 'Cookie', cursive;
 .otrocentrado {
 width: 80px;
 margin: auto;
+align: center;
 }
 
 .saltalineas {
@@ -50,6 +51,7 @@ margin: auto;
 
 .sangrado {
 margin-bottom: 20px;
+align: center;
 }
 
 input[type="text"]{
@@ -61,4 +63,12 @@ input[type="password"]{
 button[type=submit] {
    width: 8em;  height: 4em;
    margin-right: 30px;
+}
+
+.cuadrodetexto {
+border: lightblue 1px solid;
+margin-bottom: 5px;
+width: 600px;
+margin-left: auto;
+margin-right: auto;
 }
