@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Chitter</title>
+  </head>
+  <body background = 'https://webgradients.com/public/webgradients_png/035%20Itmeo%20Branding.png'>
+    <p><%= "What would #{@email} like to say?" %> </p>
+    <form class="center3">
+      <input class= "inputpeep" type="text" name="peep">
+      <button type="submit" formmethod="post" formaction="/chitter/<%=@email%>/submit">Submit Peep</button>
+    </form>
+    <a href = 'https://twitter.com/Alex__Code'>
+    <img class="links" src='/twit.png' alt='T' width=30 heigh=30>
+    </a>
+    </br>
+    <a href = 'https://www.youtube.com/channel/UCbb1jwj4txlERk4jBWWienw?view_as=subscriber'>
+    <img src='http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Youtube-B-icon.png' alt='Y' width=30 height=30>
+    </a>
+    </br>
+    <a href = 'https://medium.com/@alex__code'>
+    <img src='/blog.png' alt='M' width=30 height=30>
+    </a>
+  </body>
+</html>

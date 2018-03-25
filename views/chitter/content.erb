@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Chitter</title>
+  </head>
+  <body background = 'http://wallpapercraft.net/wp-content/uploads/2016/06/Free-HD-Gif-Wallpapers.gif'>
+    <p> You are logged in as <%= "#{@email}" %> </p>
+    <div class="center2">
+      <form>
+      <button type="submit" formmethod="post" formaction="/chitter/<%=@email%>/logout">Log out</button>
+      <form>
+      <form>
+      <button type="submit" formmethod="get" formaction="/chitter/<%=@email%>/peep">Write Peep</button>
+      <form>
+    </div>
+    <ul>
+      <% @peeps.reverse.each do |peep| %>
+      <div class="peepbox">
+        <p class="email"><%= peep.email %> <p>
+        <p class="text"><%= peep.text %> <p>
+        <p class="dt"><%= peep.dt %> <p>
+      </div>
+      <% end %>
+    </ul>
+    <a href = 'https://twitter.com/Alex__Code'>
+    <img src='/twit.png' alt='T' width=30 heigh=30>
+    </a>
+    </br>
+    <a href = 'https://www.youtube.com/channel/UCbb1jwj4txlERk4jBWWienw?view_as=subscriber'>
+    <img src='http://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Youtube-B-icon.png' alt='Y' width=30 height=30>
+    </a>
+    </br>
+    <a href = 'https://medium.com/@alex__code'>
+    <img src='/blog.png' alt='M' width=30 height=30>
+    </a>
+    <audio autoplay="true" src="/music2.mp3">
+  </body>
+</html>
