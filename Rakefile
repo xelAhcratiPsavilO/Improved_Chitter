@@ -27,11 +27,11 @@ task :test_database_setup do
   # Clear the database
   connection.exec("TRUNCATE users, peeps;")
 
-  connection.exec("INSERT INTO users VALUES('tom@hotmail.com',
+  connection.exec("INSERT INTO users VALUES('alex@hotmail.com',
                   '$argon2i$v=19$m=65536,t=2,p=1$S7x4o+E1d+7VBHLIVF1CVQ$C6L6QCNyDmhZKpZCpRkBlk42dq1BGtOOm6QQMyftIIY');")
-  connection.exec("INSERT INTO users VALUES('george@gmail.com',
+  connection.exec("INSERT INTO users VALUES('miguel@gmail.com',
                   '$argon2i$v=19$m=65536,t=2,p=1$9yE2qwgLTdfINqUuhPxhYA$9Wc2Nk2SkHWPHpbuc/Lot4etxXgQqcmTfibrhazOszs');")
-  connection.exec("INSERT INTO users VALUES('kevin@btinternet.com',
+  connection.exec("INSERT INTO users VALUES('pedro@btinternet.com',
                   '$argon2i$v=19$m=65536,t=2,p=1$migMuHTZSXPhlKyt97UiaQ$EYVzvnlUXZB1zBHFfUL++UDULTWl4o0MnqI7Ac4QwYQ');")
 end
 
