@@ -61,7 +61,6 @@ class Chat < Sinatra::Base
 
   post '/chitter/:email/logout' do
     Instance.logout(params[:email])
-    sessions.clear
     redirect('chitter/index')
   end
 
